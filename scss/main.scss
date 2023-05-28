@@ -1,13 +1,12 @@
 body {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 // Variables
-$pink: plum;
+$pink: #dda0dd;
 $blue: #1e90ff;
 $black: #4b4346;
 
-
-@import "./menu.scss";
 @import "./toast.scss";
-
+@import "./menu.scss";
+@import "./style.scss";

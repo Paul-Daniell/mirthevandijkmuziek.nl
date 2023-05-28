@@ -1,83 +1,67 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-  }
-  .container {
-    margin: 50px auto;
-    padding: 20px;
-    max-width: 600px;
-    background-color: plum;
-    border-radius: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-     }
-     .quote {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        width: 50%;
-      }
-      .image {
-        max-width: 50%;
-        height: auto;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-      }
-
-    
-  h1 {
-    font-size: 36px;
-    color: #333;
-    margin-top: 0;
-  }
-  h4 {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 30px;
-  }
-
-.stalemate {
-    font-family: "stalemate", sans-serif;
-    font-size: 2rem;
+.succes-box {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 601px;
+  background-color: $pink;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+}
+.image {
+  max-width: 100%;
+  height: auto;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
+h1 {
+  font-size: 36px;
+  color: $black;
+  margin-top: 0;
+}
+h4 {
+  font-size: 18px;
+  color: $black;
+  margin-bottom: 30px;
+}
 
-  .quote {
-    display: flex;
+.stalemate {
+  font-family: "stalemate", sans-serif;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .succes-box {
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    width: 50%;
+    align-items: center;
   }
+  .quote,
   .image {
-    max-width: 50%;
-    height: auto;
+    max-width: 100%;
   }
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .quote, .image {
-      max-width: 100%;
-    }
-  }
+}
 
-  button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-  }
-  button:hover {
-    background-color: #fff;
-    color: #333;
-  }
+.backToHome {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.backToHome:hover {
+  background-color: #fff;
+  color: #333;
+}
